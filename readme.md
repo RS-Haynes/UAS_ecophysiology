@@ -10,7 +10,7 @@
 
 This repository contains example code and data for analysis presented in:
 
-> **[Author(s)], [Year].** *UAS Ecophysiology: Imaging spectroscopy can map canopy water potential in a diverse forest ecosystem.* [Journal Name]. [DOI]
+> **[Haynes RS, Lucieer A, Turner D, Cimoli E, Sivanandam P, Brodribb T], [2026].** *UAS Ecophysiology: Imaging spectroscopy can map canopy water potential in a diverse forest ecosystem.* [Journal Name]. [DOI]
 
 We demonstrate that Unoccupied Aerial System (UAS)-based imaging spectroscopy can reliably infer **leaf and canopy water potential (Ψ)** across a structurally and taxonomically diverse forest landscape — linking remotely sensed spectral signatures to plant hydraulic status at an ecologically meaningful scale.
 
@@ -20,8 +20,8 @@ We demonstrate that Unoccupied Aerial System (UAS)-based imaging spectroscopy ca
 
 | Dataset | Format | Size | DOI / Link |
 |---------|--------|------|-----------|
-| UAS hyperspectral imagery subset | ENVI/HDF5 | ~XX GB | [Repository link] |
-| Lab spectra with water potential measurements | CSV | <1 MB | Included in `/data/raw/field/` |
+| UAS hyperspectral imagery subset | ENVI | ~XX MB | Included in `/Data/Example_imagery/` |
+| Lab spectra with water potential measurements | CSV | <1 MB | Included in `/Data/Lab_spectra/` |
 
 ---
 
@@ -31,19 +31,15 @@ We demonstrate that Unoccupied Aerial System (UAS)-based imaging spectroscopy ca
 UAS Flight Campaign
       │
       ▼
-Radiometric Calibration (empirical line method)
+Laboratory experiment
       │
       ▼
-Atmospheric Correction (ATCOR / QUAC)
+Model development
       │
-      ├──► Spectral Indices (WBI, NDWI, DATT)
-      │
-      ├──► Continuum Removal & Absorption Features
-      │
-      └──► PLSR / Random Forest ──► Canopy Ψ Maps
+      └──► Random forest lab model
                     │
                     ▼
-           Field Validation (pressure bomb)
+           Scaled and validated to UAS hyperspectral imagery
 ```
 
 ---
