@@ -4,7 +4,7 @@
 @detail:         This is an example script that runs 1000 iterations of Random Forest regression on lab-based
                  spectroscopy data to assess model stability. Each iteration uses
                  a random train/test split. Summary statistics and feature
-                 importances are reported across all iterations.
+                 importances are reported across all iterations. Outputs final model trained on all data.
 @Notes:          This script is computed only for the laboratory dataset. To incorporate field observations, 
                  additional code will need to be added to bring the data in and apply the model. Example code
                  to implement this is given at the end of the script.
