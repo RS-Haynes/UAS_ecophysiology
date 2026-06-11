@@ -32,7 +32,7 @@ Supporting example data are included under:
 Data/
 |-- Lab_spectra/        # Spectra CSVs with water potential as the first column
 |-- Example_imagery/    # Small ENVI imagery subsets and vegetation/shadow mask
-|-- Model_pkls/         # Example trained random forest model files
+|-- Model_pkls/         # Trained random forest model files
 ```
 
 ---
@@ -42,7 +42,7 @@ Data/
 If you use this code or data, please cite the published manuscript:
 
 ```bibtex
-@article{Haynes2026UASEcophysiology,
+@article{UAS_Ecophysiology,
   author  = {Haynes, R. S. and Lucieer, A. and Turner, D. and Cimoli, E. and Sivanandam, P. and Brodribb, T.},
   title   = {UAS Ecophysiology: Imaging spectroscopy can map canopy water potential in a diverse forest ecosystem},
   journal = {Remote Sensing of Environment},
